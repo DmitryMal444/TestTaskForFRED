@@ -57,7 +57,7 @@ $curPage = $APPLICATION->GetCurPage(true);
 						);?>
 					</a>
 				</div>
-
+                        
 				<div class="col-auto d-none d-md-block bx-header-personal">
 					<?$APPLICATION->IncludeComponent(
 						"bitrix:sale.basket.basket.line",
@@ -113,6 +113,17 @@ $curPage = $APPLICATION->GetCurPage(true);
 								</div>
 							</div>
 						</div>
+						<div>
+    						<?$APPLICATION->IncludeComponent(
+    							"bitrix:main.include",
+    							"",
+    							array(
+    								"AREA_FILE_SHOW" => "file",
+    								"PATH" => SITE_DIR."include/test_proj.php"
+    							),
+    							false
+    						);?>
+    					</div>
 					</div>
 				</div>
 			</div>
